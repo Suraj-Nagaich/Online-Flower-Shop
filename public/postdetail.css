@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #fff0f5 0%, #fffafc 100%); 
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  color: #4a2c2a; 
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 1100px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(201, 79, 124, 0.1); 
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  border: 2px solid #ffe6f0; 
+}
+.main:hover {
+  box-shadow: 0 14px 36px rgba(201, 79, 124, 0.15);
+  transform: translateY(-4px);
+}
+.left {
+  flex: 1 1 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  border: 3px solid #ffd6e8; 
+}
+.right {
+  flex: 2 1 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.top h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #c94f7c; 
+  margin-bottom: 15px;
+  position: relative;
+}
+.top h1::after {
+  content: "🌸"; 
+  margin-left: 10px;
+}
+.top em {
+  font-size: 15px;
+  color: #7b3f61;
+  margin-bottom: 10px;
+  display: inline-block;
+  font-style: italic;
+}
+.top p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #5a3c45;
+  margin-bottom: 20px;
+}
+.top strong {
+  color: #e75480; 
+  font-weight: 600;
+}

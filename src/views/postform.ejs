@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add New Flower</title>
+  <link rel="stylesheet" href="/postForm.css" />
+</head>
+<body>
+
+  <h2>Add new Flower</h2>
+  <form action="/posts/add" enctype="multipart/form-data" method="post">
+
+    <label for="title">Title</label><br>
+    <input type="text" name="title" placeholder="Enter Flower Details" required><br><br>
+
+    <label for="image">Cover Image</label><br>
+    <input type="file" name="image"><br><br>
+
+    <label for="Buyer">Buyer</label><br>
+    <input type="text" name="author" placeholder="Enter buyer  name" required><br><br>
+
+    <label for="category">Category</label><br>
+    <input type="text" name="category" placeholder="e.g. Professional, Greeting" required><br><br>
+
+    <label for="content">Content</label><br>
+    <textarea name="content" rows="10" cols="50" placeholder="Add your feedback..." required></textarea><br><br>
+
+    <input type="hidden" name="email" value="<%= user ? user.email : '' %>">
+
+    <div class="btn">
+      <button type="submit">Publish</button>
+    </div>
+
+  </form>
+
+</body>
+</html>
